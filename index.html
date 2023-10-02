@@ -23,38 +23,22 @@
 
 <body>
     <!-- our code starts here -->
-
-    <!-- 
-    <nav>
-
-        <img src="profile_logo_black_bg.jpeg">
-
-
-        <div id="header">
-            <div class="container1">
-                <nav>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#qualification">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-            </div>
-            -->
-
-
+    <button onclick="Function()" id="myBtn" title="Chat with Us">
+        <a style="text-decoration: none;" href="https://wa.me/qr/D4ML4QU6B4CIF1"><img width="50px" height="50" 
+        src="https://img.icons8.com/3d-fluency/94/whatsapp.png" alt="whatsapp" /></a>
+    </button>
+    
     <!-- Navigation start -->
 
 
 
-    <nav class="navbar bg-body-tertiary fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"> <img src="profile_logo_black_bg.jpeg" alt="logo" width="30" height="30"
+    <nav class="navbar fixed-top"style="background-color: black;">
+        <div class="container-fluid" >
+          <a class="navbar-brand" href="#"> <img src="profile_logo_black_bg.jpeg" alt="logo" 
             style="width:50px;height:50px;border-radius: 5ic;">
         </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <h4>Mr. Rajan Patel</h4>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="background-color: white;">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -70,14 +54,15 @@
                   <a class="nav-link active" aria-current="page" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#qualification">About</a>
-                </li>
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  </li>
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#services">Services</a>
                 </li>
+                
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                </li>
+                    <a class="nav-link active" aria-current="page" href="#qualification">About</a>
+                  </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#contact">contact</a>
                 </li>
@@ -92,6 +77,8 @@
     <!-- home -->
 
     <div id="home" class="container">
+
+        <img src="founder.png" width="250px" class="rounded mx-auto d-block" alt="Founder-image">
         <div class="jumbotron">
 
             <section>
@@ -252,7 +239,7 @@
                     <input type="text" id="subject" placeholder="Enter Your Subject..."><br><br>
 
                     Your Message: <sup style="color: red;">*</sup><br><br>
-                    <textarea name="message" id="message" placeholder="Write Your Queries..." cols="30" rows="3"
+                    <textarea name="message" id="message" placeholder="Write Your Queries..." cols="20" rows="3"
                         required></textarea><br><br>
 
                     <input type="button" id="button" value="Send" onclick="Send()">
@@ -331,7 +318,43 @@
 
 
         </script>
+
+        
+    <!-- whatsapp chat button  -->
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function Function() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
        
+
+        
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
 
 </body>
 
