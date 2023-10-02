@@ -20,6 +20,10 @@ nav img {
     margin-bottom: 25px;
 }
 
+#jumbotron{
+    color:#fff;
+}
+
 h4{
     color:white;
     font-family: serif;
@@ -34,9 +38,9 @@ h4:hover{
 
 
 .jumbotron {
-    background-color: #A699B0;
-
-    
+    /* background-color: #A699B0; */
+    background-color: #454545;
+    padding: 2rem 1rem;
         overflow-x: hidden;
     
 }
@@ -67,12 +71,12 @@ section {
 }
 
 .content h2:nth-child(1) {
-    color: transparent;
-    -webkit-text-stroke: 0.2px #ffffff;
+    color: #fff;
+    -webkit-text-stroke: 0.2px #fff;
 }
 
 .content h2:nth-child(2) {
-    color: #ffffff;
+    color: #ff7200;
     animation: animate 4s ease-in-out infinite;
 }
 
@@ -129,13 +133,12 @@ h2 {
 
 p {
     text-align: center;
-    color: white;
+    color: #454545;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
-
-    background-color: gray;
+    background-color: #fff;
 }
 
 .main {
@@ -207,7 +210,7 @@ body {
 }
 
 .Skills {
-    color: #efebeb;
+    color: #504f4f;;
     font-size: large;
     font-weight: bold;
     font-family: cursive;
@@ -217,7 +220,7 @@ body {
 
 
 .form {
-    color: white;
+    color: #504f4f;;
     /* style="border:orange;  */
  border-width: 5px;
     border-style: solid;
@@ -259,7 +262,7 @@ nav ul li {
 nav ul li a {
     margin-top: -60px;
     float: right;
-    color: #fff;
+    color: #454545;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -269,7 +272,7 @@ nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #000000;
+    background: #454545;
     position: absolute;
     left: 0;
     bottom: -6px;
