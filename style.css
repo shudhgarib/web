@@ -5,10 +5,14 @@
 }
 
 nav img {
-    margin-left: 300px;
+    margin-left: 5px;
     margin-top: 10px;
     height: 100px;
     border-radius: 50px;
+}
+
+.offcanvas{
+    max-width: 50%;
 }
 
 .nav-item a {
@@ -27,27 +31,9 @@ nav img {
         overflow-x: hidden;
     
 }
-
-        #myBtn {
-            display: none;
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 99;
-            font-size: 20px;
-            border: none;
-            outline: none;
-            background-color: rgb(120, 115, 113);
-            color: white;
-            cursor: pointer;
-            padding: 0px;
-            border-radius: 50px;
-        }
-
-        #myBtn:hover {
-            background-color: #2d9b08;
-        }
-
+.container{
+    margin-top: 175px;
+}
 section {
 
     /* display: inline; */
