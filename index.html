@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
     <link rel="icon" type="image/png" href="profile_logo_black_bg.jpeg" ;>
     <title>Rajan Official Portfolio</title>
     <link rel="icon" type="image/x-icon" href="favicon.jpg">
@@ -19,11 +23,8 @@
 
 <body>
     <!-- our code starts here -->
-<button onclick="Function()" id="myBtn" title="Chat with Us">
-    <a style="text-decoration: none;" href="https://wa.me/qr/D4ML4QU6B4CIF1"><img width="50px" height="50" 
-    src="https://img.icons8.com/3d-fluency/94/whatsapp.png" alt="whatsapp" /></a>
-</button>
 
+    <!-- 
     <nav>
 
         <img src="profile_logo_black_bg.jpeg">
@@ -40,30 +41,75 @@
                     </ul>
                 </nav>
             </div>
-        </div>
-
-
-<!-- home -->
-
-        <div id="home" class="container mt-3">
-            <div class="jumbotron">
-
-                <section>
-                    <div class="content mt-3">
-                        <h2>Rajan Present...</h2>
-                        <h2>Rajan Present...</h2>
-                    </div>
-                </section>
-                <h1><br>All About My Life & <br><span style="color:rgb(36, 9, 116);">Achievement's!</span> <br> </h1>
-                <p class="par">Hello, I'm Rajan, a final-year Master's student pursuing Computer Applications and a
-                    dedicated freelance frontend & backend developer. <br>Qualification<br>Pursuing M.C.A from Dr.
-                    Ajeenkya D Y Pati University. (PUNE)</p>
-                <p>SPPU</p>
             </div>
+            -->
+
+
+    <!-- Navigation start -->
+
+
+
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"> <img src="profile_logo_black_bg.jpeg" alt="logo" width="30" height="30"
+            style="width:50px;height:50px;border-radius: 5ic;">
+        </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"> <img src="profile_logo_black_bg.jpeg" alt="logo" width="30" height="30"
+                style="width:50px;height:50px;border-radius: 5ic;">
+            </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#qualification">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">contact</a>
+                </li>
+               </ul>
+           
+            </div>
+          </div>
         </div>
+      </nav>
+
+
+    <!-- home -->
+
+    <div id="home" class="container">
+        <div class="jumbotron">
+
+            <section>
+                <div class="content mt-3">
+                    <h2>Rajan Present...</h2>
+                    <h2>Rajan Present...</h2>
+                </div>
+            </section>
+            <h1><br>All About My Life & <br><span style="color:rgb(36, 9, 116);">Achievement's!</span> <br> </h1>
+            <p class="par">Hello, I'm Rajan, a final-year Master's student pursuing Computer Applications and a
+                dedicated freelance frontend & backend developer. <br>Qualification<br>Pursuing M.C.A from Dr.
+                Ajeenkya D Y Patil University. (PUNE)</p>
+            <p>SPPU</p>
+        </div>
+    </div>
     </nav>
 
-<!-- skill -->
+    <!-- skill -->
     <div id="skill" class="skill">
         <p class="Skills">Skilled In</p>
         <hr style="background-color:white">
@@ -101,12 +147,12 @@
     <br>
     <div class="card" style="width: 17rem;">
         <img src="boy-litsening-music-with-code.gif" width="250px">
-        </div>
+    </div>
 
 
 
     </div>
-        <!-- qualification -->
+    <!-- qualification -->
 
     <div id="qualification" class="container">
 
@@ -118,14 +164,14 @@
                     <img src="school.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" />
                     <h2>My High School!<p style="color:rgb(36, 9, 116);">(Bihar)</p>
                     </h2>
-                    <p> Gauri Shankar High School Sanjhauli was established in 1951 and it is managed by the Department of
+                    <p>GAURI SHANKAR H S SANJHAULI was established in 1951 and it is managed by the Department of
                         Education.
                         It is located in Rural area. It is located in SANJHAULI block of ROHTAS district of Bihar. The
                         school consists of Grades from 9 to 12.
                         Hindi is the medium of instructions in this school. This school is approachable by all weather
                         road.
                         In this school academic session starts in April.</p>
-                    <p><a class="btn btn-secondary" href="https://shorturl.at/tHLN4" target="_main" role="button">View details »</a>
+                    <p><a class="btn btn-secondary" href="https://shorturl.at/tHLN4" role="button">View details »</a>
                     </p>
                 </div>
                 <div class="col-md-4 text-center">
@@ -140,7 +186,7 @@
                         other
                         communities and regions
                         may also apply. </p>
-                    <p><a class="btn btn-secondary" href="http://www.gcran.org/" target="_main" role="button">View details »</a></p>
+                    <p><a class="btn btn-secondary" href="http://www.gcran.org/" role="button">View details »</a></p>
                 </div>
                 <div class="col-md-4 text-center">
                     <img src="mca.jpeg" class="bd-placeholder-img rounded-circle" width="140" height="140" />
@@ -153,163 +199,139 @@
                         ‘ADYPU Student Experience’ supported by excellent facilities and highly motivated teaching
                         staff.
                     </p>
-                    <p><a class="btn btn-secondary" href="https://dypsomca.com/
-" target="_main" role="button">View details »</a>
+                    <p><a class="btn btn-secondary" href="https://shorturl.at/ikBSZ" role="button">View details »</a>
                     </p>
                 </div>
             </div>
-           
-
-                
-    <!-- services -->
-    <div id="services" class="container mt-3">
-        <p class="Skills">Services (<span style="font-family: Arial, Helvetica, sans-serif; color:#47404b">My-Project</span>)</p>
-        <hr style="background-color:white">
-
-        <div class="card" style="width: 20rem;">
-            <img src="project.png" class="card-img-top" alt="my-project-look">
-            
-            <div class="card-body" style="background-color: #A699B0;">
-              <h5 class="card-title">Worship Management System.</h5>
-              <p class="card-text">This Project Is Develop By Using SDLC Methodology.</p>
-              <a href="https://biharipoojapath.com" class="btn btn-secondary">Live Preview »</a>
-            </div>
-        </div>
-        <br>
-        <div class="right">
-            <img src="3d-code.png" width="250px">
-        </div>
-
-            </div>
-    </div>
-                <!-- contact -->
-                <div class="skill"><br>
-                    <p class="Skills">Contact US</p>
-                    <hr style="background-color:white">
-                <div id="contact" class="form" align="center">
-                    <form action="">
-                        <h6 style="color:black">Let's Talk...</h6>
-                        <hr style="background-color: white;">
 
 
-                        Your Name: <sup style="color: red;">*</sup>
-                        <input type="text" name="Name" id="Name" placeholder="Enter Full Name..." required><br><br>
 
-                        Phone No: <sup style="color: red;">*</sup>
-                        <input type="text" name="Contact" id="Contact" placeholder="Enter Mobile No." required><br><br>
+            <!-- services -->
+            <div id="services" class="container mt-3">
+                <p class="Skills">Services (<span
+                        style="font-family: Arial, Helvetica, sans-serif; color:#47404b">My-Project</span>)</p>
+                <hr style="background-color:white">
 
+                <div class="card" style="width: 20rem;">
+                    <img src="project.png" class="card-img-top" alt="my-project-look">
 
-                        Your Email:<sup style="color: red;">*</sup>
-                        <input type="email" name="Email" id="Email" placeholder="Enter Email Id." required><br><br>
-
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" placeholder="Enter Your Subject..."><br><br>
-
-                        Your Message: <sup style="color: red;">*</sup><br><br>
-                        <textarea name="message" id="message" placeholder="Write Your Queries..." cols="25" rows="3"
-                            required></textarea><br><br>
-
-                        <input type="button" id="button" value="Send" onclick="Send()">
-                        <br><br>
-
-                    </form>
-                </div>
-            </div>
-
-
-            <!-- footer -->
-<hr style="background-color: aliceblue;">
-            <figure class="text-center">
-                <blockquote class="blockquote">
-                    <div class="gmail">
-                        <a style="text-decoration: none;" href="http://surl.li/gspzo"><img src="instagram.png"
-                                width="35px"></a>
-<!--                         <a style="text-decoration: none;" href="mailto:rajanunltd@gmail.com"><img src="gmail.png"
-                                width="35px"></a> -->
-                        <a style="text-decoration: none;" href="http://surl.li/gspze"><img src="twitter.png"
-                                width="35px"></a>
-                        <a style="text-decoration: none;" href="http://surl.li/gspzt"><img src="You_tube.png"
-                                width="35px"></a>
-<!--                         <a style="text-decoration: none;" href="https://wa.me/qr/D4ML4QU6B4CIF1"><img
-                                src="whatsapp.png" width="35px"></a> -->
-                        <a href="tel:9006743680"><img width="35px"
-                                src="https://img.icons8.com/ios-filled/50/apple-phone.png" alt="phone" /></a>
-
+                    <div class="card-body" style="background-color: #A699B0;">
+                        <h5 class="card-title">Worship Management System.</h5>
+                        <p class="card-text">This Project Is Develop By Using SDLC Methodology.</p>
+                        <a href="https://biharipoojapath.com" class="btn btn-secondary">Live Preview »</a>
                     </div>
-                </blockquote>
-            </figure>
+                </div>
+                <br>
+                <div class="right">
+                    <img src="3d-code.png" width="250px">
+                </div>
+
+            </div>
+        </div>
+        <!-- contact -->
+        <div class="skill"><br>
+            <p class="Skills">Contact US</p>
+            <hr style="background-color:white">
+            <div id="contact" class="form" align="center">
+                <form action="">
+                    <h6 style="color:black">Let's Talk...</h6>
+                    <hr style="background-color: white;">
 
 
-        
+                    Your Name: <sup style="color: red;">*</sup>
+                    <input type="text" name="Name" id="Name" placeholder="Enter Full Name..." required><br><br>
 
-            <script src="https://smtpjs.com/v3/smtp.js"></script>
-
-            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-            <script>
-
-                function Send() {
-                    console.log("function call")
+                    Phone No: <sup style="color: red;">*</sup>
+                    <input type="text" name="Contact" id="Contact" placeholder="Enter Mobile No." required><br><br>
 
 
-                    var name = document.getElementById("Name").value;
-                    var contact = document.getElementById("Contact").value;
-                    var email = document.getElementById("Email").value;
-                    var sub = document.getElementById("subject").value;
-                    var mess = document.getElementById("message").value;
+                    Your Email:<sup style="color: red;">*</sup>
+                    <input type="email" name="Email" id="Email" placeholder="Enter Email Id." required><br><br>
 
-                    var body = "Name: " + name + "<br/> Email:" + email + "<br/> Contact Number:" + contact + "<br/> Message:" + mess;
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" placeholder="Enter Your Subject..."><br><br>
 
-                    console.log(body);
-                    Email.send({
+                    Your Message: <sup style="color: red;">*</sup><br><br>
+                    <textarea name="message" id="message" placeholder="Write Your Queries..." cols="30" rows="3"
+                        required></textarea><br><br>
 
-                        SecureToken: "c6241793-5da2-4fe9-a04e-09b93cac9708",
-                        To: 'rajanpatel9708@gmail.com',
-                        From: "rajanpatel9708@gmail.com",
-                        Subject: sub,
-                        Body: body
-                    }).then(
-                        message => {
-                            if (message == 'OK') {
+                    <input type="button" id="button" value="Send" onclick="Send()">
+                    <br><br>
 
-                                swal("Successfull", "Your Data Successfully Received", "success");
-                            }
-                            else {
+                </form>
+            </div>
+        </div>
 
-                                swal("Something Wrong", "Your Data is not Received", "error");
-                            }
+
+        <!-- footer -->
+        <hr style="background-color: aliceblue;">
+        <figure class="text-center">
+            <blockquote class="blockquote">
+                <div class="gmail">
+                    <a style="text-decoration: none;" href="http://surl.li/gspzo"><img src="instagram.png"
+                            width="35px"></a>
+                    <a style="text-decoration: none;" href="mailto:rajanunltd@gmail.com"><img src="gmail.png"
+                            width="35px"></a>
+                    <a style="text-decoration: none;" href="http://surl.li/gspze"><img src="twitter.png"
+                            width="35px"></a>
+                    <a style="text-decoration: none;" href="http://surl.li/gspzt"><img src="You_tube.png"
+                            width="35px"></a>
+                    <a style="text-decoration: none;" href="https://wa.me/qr/D4ML4QU6B4CIF1"><img src="whatsapp.png"
+                            width="35px"></a>
+                    <a href="tel:9006743680"><img width="35px"
+                            src="https://img.icons8.com/ios-filled/50/apple-phone.png" alt="phone" /></a>
+
+                </div>
+            </blockquote>
+        </figure>
+
+
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script>
+
+            function Send() {
+                console.log("function call")
+
+
+                var name = document.getElementById("Name").value;
+                var contact = document.getElementById("Contact").value;
+                var email = document.getElementById("Email").value;
+                var sub = document.getElementById("subject").value;
+                var mess = document.getElementById("message").value;
+
+                var body = "Name: " + name + "<br/> Email:" + email + "<br/> Contact Number:" + contact + "<br/> Message:" + mess;
+
+                console.log(body);
+                Email.send({
+
+                    SecureToken: "c6241793-5da2-4fe9-a04e-09b93cac9708",
+                    To: 'rajanpatel9708@gmail.com',
+                    From: "rajanpatel9708@gmail.com",
+                    Subject: sub,
+                    Body: body
+                }).then(
+                    message => {
+                        if (message == 'OK') {
+
+                            swal("Successfull", "Your Data Successfully Received", "success");
                         }
-                    );
+                        else {
+
+                            swal("Something Wrong", "Your Data is not Received", "error");
+                        }
+                    }
+                );
 
 
 
-                }
-
-
-
-            </script>
-
-<!--         whatsapp chat top button -->
-          <script>
-        // Get the button
-        let mybutton = document.getElementById("myBtn");
-
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () { scrollFunction() };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
             }
-        }
 
-        // When the user clicks on the button, scroll to the top of the document
-        function Function() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
+
+
+        </script>
+       
 
 </body>
 
