@@ -222,34 +222,114 @@
         <div class="skill"><br>
             <p class="Skills">Contact US</p>
             <hr style="background-color:white">
-            <div id="contact" class="form" align="center">
-                <form action="">
-                    <h6 style="color:black">Let's Talk...</h6>
-                    <hr style="background-color: white;">
-
-
-                    Your Name: <sup style="color: red;">*</sup>
-                    <input type="text" name="Name" id="Name" placeholder="Enter Full Name..." required><br><br>
-
-                    Phone No: <sup style="color: red;">*</sup>
-                    <input type="text" name="Contact" id="Contact" placeholder="Enter Mobile No." required><br><br>
-
-
-                    Your Email:<sup style="color: red;">*</sup>
-                    <input type="email" name="Email" id="Email" placeholder="Enter Email Id." required><br><br>
-
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" placeholder="Enter Your Subject..."><br><br>
-
-                    Your Message: <sup style="color: red;">*</sup><br><br>
-                    <textarea name="message" id="message" placeholder="Write Your Queries..." cols="20" rows="3"
-                        required></textarea><br><br>
-
-                    <input type="button" id="button" value="Send" onclick="Send()">
-                    <br><br>
-
-                </form>
-            </div>
+          
+    <div class="form" align="center">
+        <form action="">
+            <h6>Send Your Issue...</h6>
+            <hr>
+    
+    
+            Your Name: <sup style="color: red;">*</sup>
+            <input type="text" name="Name" id="Name" placeholder="Enter Full Name..." required><br><br>
+    
+            Phone No: <sup style="color: red;">*</sup>
+            <input type="text" name="Contact" id="Contact" placeholder="Enter Mobile No." required><br><br>
+    
+    
+            Your Email:<sup style="color: red;">*</sup>
+            <input type="email" name="Email" id="Email" placeholder="Enter Email Id." required><br><br>
+    
+            <label for="subject">Subject<sup style="color: black;">optional</sup></label>
+            <input type="text" id="subject" placeholder="Enter Your Subject..."><br><br>
+    
+            Your Message: <sup style="color: red;">*</sup><br><br>
+            <textarea name="message" id="message" placeholder="Write Your Queries..." cols="30" rows="5"
+                required></textarea><br><br>
+    
+            <!-- I added an id attribute to the button -->
+            <input type="button" value="Send" id="send-button" onclick="Send()">
+            <br><br>
+    
+        </form>
+    </div>
+    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+    
+        function Send() {
+            console.log("function call")
+    
+    
+            var name = document.getElementById("Name").value;
+            var contact = document.getElementById("Contact").value;
+            var email = document.getElementById("Email").value;
+            var sub = document.getElementById("subject").value;
+            var mess = document.getElementById("message").value;
+    
+            var body = "Name: " + name + "<br/> Email:" + email + "<br/> Contact Number:" + contact + "<br/> Message:" + mess;
+    
+            console.log(body);
+            
+            // I added a condition to check if all the required fields are filled
+            if (name && contact && email && mess) {
+                Email.send({
+    
+                    SecureToken: "c6241793-5da2-4fe9-a04e-09b93cac9708",
+                    To: 'rajanpatel9708@gmail.com',
+                    From: "rajanpatel9708@gmail.com",
+                    Subject: sub,
+                    Body: body
+                }).then(
+                    message => {
+                        if (message == 'OK') {
+    
+                            swal("Successfull", "Your Data Successfully Received", "success");
+                        }
+                        else {
+    
+                            swal("Something Wrong", "Your Data is not Received", "error");
+                        }
+                    }
+                );
+            } else {
+                // I added an alert message to inform the user to fill all the required fields
+                swal("Missing Fields", "Please fill all the required fields before sending", "warning");
+            }
+    
+    
+    
+        }
+    
+        // I added a function to disable or enable the button based on the input values
+        function validateInput() {
+            var name = document.getElementById("Name").value;
+            var contact = document.getElementById("Contact").value;
+            var email = document.getElementById("Email").value;
+            var mess = document.getElementById("message").value;
+    
+            var button = document.getElementById("send-button");
+    
+            if (name && contact && email && mess) {
+                // enable the button if all the required fields are filled
+                button.disabled = false;
+            } else {
+                // disable the button if any of the required fields are empty
+                button.disabled = true;
+            }
+        }
+    
+        // I added event listeners to call the validateInput function whenever the input values change
+        document.getElementById("Name").addEventListener("input", validateInput);
+        document.getElementById("Contact").addEventListener("input", validateInput);
+        document.getElementById("Email").addEventListener("input", validateInput);
+        document.getElementById("message").addEventListener("input", validateInput);
+    
+        // I called the validateInput function once to initialize the button state
+        validateInput();
+    
+    </script>
         </div>
 
 
@@ -275,52 +355,6 @@
             </blockquote>
         </figure>
 
-
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
-
-        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-        <script>
-
-            function Send() {
-                console.log("function call")
-
-
-                var name = document.getElementById("Name").value;
-                var contact = document.getElementById("Contact").value;
-                var email = document.getElementById("Email").value;
-                var sub = document.getElementById("subject").value;
-                var mess = document.getElementById("message").value;
-
-                var body = "Name: " + name + "<br/> Email:" + email + "<br/> Contact Number:" + contact + "<br/> Message:" + mess;
-
-                console.log(body);
-                Email.send({
-
-                    SecureToken: "c6241793-5da2-4fe9-a04e-09b93cac9708",
-                    To: 'rajanpatel9708@gmail.com',
-                    From: "rajanpatel9708@gmail.com",
-                    Subject: sub,
-                    Body: body
-                }).then(
-                    message => {
-                        if (message == 'OK') {
-
-                            swal("Successfull", "Your Data Successfully Received", "success");
-                        }
-                        else {
-
-                            swal("Something Wrong", "Your Data is not Received", "error");
-                        }
-                    }
-                );
-
-
-
-            }
-
-
-
-        </script>
 
         
     <!-- whatsapp chat button  -->
