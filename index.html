@@ -23,58 +23,60 @@
 
 <body>
     <!-- our code starts here -->
-    
-    
+
+
     <!-- Navigation start -->
 
 
 
-    <nav class="navbar fixed-top"style="background-color: #454545;">
-        <div class="container-fluid" >
-          <a class="navbar-brand" href="#"> <img src="profile_logo_black_bg.jpeg" alt="logo" 
-            style="width:50px;height:50px;border-radius: 5ic;">
-        </a>
+    <nav class="navbar fixed-top" style="background-color: #454545;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"> <img src="profile_logo_black_bg.jpeg" alt="logo"
+                    style="width:50px;height:50px;border-radius: 5ic;">
+            </a>
             <h4>Mr. Rajan Patel</h4>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="background-color: white;">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"> <img src="profile_logo_black_bg.jpeg" alt="logo" width="30" height="30"
-                style="width:50px;height:50px;border-radius: 5ic;">
-            </h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="background-color: white;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"> <img src="profile_logo_black_bg.jpeg"
+                            alt="logo" width="30" height="30" style="width:50px;height:50px;border-radius: 5ic;">
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#services">Services</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#qualification">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">contact</a>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                </li>
-                
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#services">Services</a>
-                </li>
-                
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#qualification">About</a>
-                  </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">contact</a>
-                </li>
-               </ul>
-           
-            </div>
-          </div>
         </div>
-      </nav>
+    </nav>
 
 
-      <!-- home -->
-      
-      <div id="home" class="container">
-        
-              <!-- whatsapp chat button -->
-<!--         
+    <!-- home -->
+
+    <div id="home" class="container">
+
+        <!-- whatsapp chat button -->
+        <!--         
         
               <button onclick="Function()" id="myBtn" title="Chat with Us">
                 <a style="text-decoration: none;" href="https://wa.me/qr/D4ML4QU6B4CIF1"><img width="50px" height="50" 
@@ -90,11 +92,16 @@
                     <h2>Rajan Present...</h2>
                 </div>
             </section>
-            <h1 style="color:#efebe7"><br>All About My Life & <br><span style="color:#FF6000;">Achievement's!</span> <br> </h1>
+            <h1 style="color:#efebe7"><br>All About My Life & <br><span style="color:#FF6000;">Achievement's!</span>
+                <br> </h1>
             <p id="jumbotron">Hello, I'm Rajan, a final-year Master's student pursuing Computer Applications and a
                 dedicated freelance frontend & backend developer. <br>Qualification<br>Pursuing M.C.A from Dr.
-                Ajeenkya D Y Patil University. (PUNE) <br> <br>SPPU</p>
-        
+                Ajeenkya D Y Patil University. (PUNE) <br>
+                <span style="color:tomato;">
+                    I am the Founder of <a href="https://biharipoojapath.com/" target="_main">"biharipoojapath.com"</a> & hold the position of CEO.
+                </span> <br>SPPU
+            </p>
+
         </div>
     </div>
     </nav>
@@ -202,16 +209,44 @@
                         style="font-family: Arial, Helvetica, sans-serif; color:#47404b">My-Project</span>)</p>
                 <hr style="background-color:white">
 
-                <div class="card" style="width: 20rem;">
-                    <img src="project.png" class="card-img-top" alt="my-project-look">
+                <div class="project" align="center">
+                    <div style="display: inline-block;">
+                        <p>1'st Project</p>
+                        <div class="card" style="width: 20rem;">
+                            <!-- Card content here -->
+                            <img src="project.png" class="card-img-top" alt="my-project-look">
 
-                    <div class="card-body" style="background-color: #A699B0;">
-                        <h5 class="card-title">Worship Management System.</h5>
-                        <p class="card-text">This Project Is Develop By Using SDLC Methodology.</p>
-                        <a href="https://biharipoojapath.com" class="btn btn-secondary">Live Preview »</a>
+                            <div class="card-body" style="background-color: #A699B0;">
+                                <h5 class="card-title">Worship Management System.</h5>
+                                <p class="card-text">This Project Is Develop By Using SDLC Methodology.</p>
+                                <a href="https://biharipoojapath.com" class="btn btn-secondary">Live Preview »</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2'nd project -->
+                    <div style="display: inline-block;">
+                        <p>2'nd Project</p>
+                        <div class="card" style="width: 20rem;">
+                            <!-- Card content here -->
+                            <img src="mini_cal.png" class="card-img-top" alt="my-project-look">
+
+                            <div class="card-body" style="background-color: #A699B0;">
+                                <h5 class="card-title">Scintific Calculator.</h5>
+                                <p class="card-text">This Project Is Develop By Using C++. It Is Desktop Base, &
+                                    Password Protected!<br>Use Password : <span style="color:green;"> "R3SHM41"</span>
+                                </p>
+                                <!-- <p class="card-text"></p> -->
+                                <a href="mini_calculator.exe" download class="btn btn-secondary"> <span><img
+                                            src="download.gif" width="20px" height="20px" alt=""></span> Download .exe
+                                    file</a>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <br>
+
+                <!-- <a href="https://biharipoojapath.com" class="btn btn-secondary">Live Preview »</a> -->
+
                 <div class="right">
                     <img src="3d-code.png" width="250px">
                 </div>
@@ -222,114 +257,114 @@
         <div class="skill"><br>
             <p class="Skills">Contact US</p>
             <hr style="background-color:white">
-          
-    <div class="form" align="center">
-        <form action="">
-            <h6>Send Your Issue...</h6>
-            <hr>
-    
-    
-            Your Name: <sup style="color: red;">*</sup>
-            <input type="text" name="Name" id="Name" placeholder="Enter Full Name..." required><br><br>
-    
-            Phone No: <sup style="color: red;">*</sup>
-            <input type="text" name="Contact" id="Contact" placeholder="Enter Mobile No." required><br><br>
-    
-    
-            Your Email:<sup style="color: red;">*</sup>
-            <input type="email" name="Email" id="Email" placeholder="Enter Email Id." required><br><br>
-    
-            <label for="subject">Subject<sup style="color: black;">optional</sup></label>
-            <input type="text" id="subject" placeholder="Enter Your Subject..."><br><br>
-    
-            Your Message: <sup style="color: red;">*</sup><br><br>
-            <textarea name="message" id="message" placeholder="Write Your Queries..." cols="20" rows="2"
-                required></textarea><br><br>
-    
-            <!-- I added an id attribute to the button -->
-            <input type="button" value="Send" id="send-button" onclick="Send()">
-            <br><br>
-    
-        </form>
-    </div>
-    
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script>
-    
-        function Send() {
-            console.log("function call")
-    
-    
-            var name = document.getElementById("Name").value;
-            var contact = document.getElementById("Contact").value;
-            var email = document.getElementById("Email").value;
-            var sub = document.getElementById("subject").value;
-            var mess = document.getElementById("message").value;
-    
-            var body = "Name: " + name + "<br/> Email:" + email + "<br/> Contact Number:" + contact + "<br/> Message:" + mess;
-    
-            console.log(body);
-            
-            // I added a condition to check if all the required fields are filled
-            if (name && contact && email && mess) {
-                Email.send({
-    
-                    SecureToken: "c6241793-5da2-4fe9-a04e-09b93cac9708",
-                    To: 'rajanpatel9708@gmail.com',
-                    From: "rajanpatel9708@gmail.com",
-                    Subject: sub,
-                    Body: body
-                }).then(
-                    message => {
-                        if (message == 'OK') {
-    
-                            swal("Successfull", "Your Data Successfully Received", "success");
-                        }
-                        else {
-    
-                            swal("Something Wrong", "Your Data is not Received", "error");
-                        }
+
+            <div class="form" align="center">
+                <form action="">
+                    <h6>Send Your Issue...</h6>
+                    <hr>
+
+
+                    Your Name: <sup style="color: red;">*</sup>
+                    <input type="text" name="Name" id="Name" placeholder="Enter Full Name..." required><br><br>
+
+                    Phone No: <sup style="color: red;">*</sup>
+                    <input type="text" name="Contact" id="Contact" placeholder="Enter Mobile No." required><br><br>
+
+
+                    Your Email:<sup style="color: red;">*</sup>
+                    <input type="email" name="Email" id="Email" placeholder="Enter Email Id." required><br><br>
+
+                    <label for="subject">Subject<sup style="color: black;">optional</sup></label>
+                    <input type="text" id="subject" placeholder="Enter Your Subject..."><br><br>
+
+                    Your Message: <sup style="color: red;">*</sup><br><br>
+                    <textarea name="message" id="message" placeholder="Write Your Queries..." cols="20" rows="2"
+                        required></textarea><br><br>
+
+                    <!-- I added an id attribute to the button -->
+                    <input type="button" value="Send" id="send-button" onclick="Send()">
+                    <br><br>
+
+                </form>
+            </div>
+
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+            <script>
+
+                function Send() {
+                    console.log("function call")
+
+
+                    var name = document.getElementById("Name").value;
+                    var contact = document.getElementById("Contact").value;
+                    var email = document.getElementById("Email").value;
+                    var sub = document.getElementById("subject").value;
+                    var mess = document.getElementById("message").value;
+
+                    var body = "Name: " + name + "<br/> Email:" + email + "<br/> Contact Number:" + contact + "<br/> Message:" + mess;
+
+                    console.log(body);
+
+                    // I added a condition to check if all the required fields are filled
+                    if (name && contact && email && mess) {
+                        Email.send({
+
+                            SecureToken: "c6241793-5da2-4fe9-a04e-09b93cac9708",
+                            To: 'rajanpatel9708@gmail.com',
+                            From: "rajanpatel9708@gmail.com",
+                            Subject: sub,
+                            Body: body
+                        }).then(
+                            message => {
+                                if (message == 'OK') {
+
+                                    swal("Successfull", "Your Data Successfully Received", "success");
+                                }
+                                else {
+
+                                    swal("Something Wrong", "Your Data is not Received", "error");
+                                }
+                            }
+                        );
+                    } else {
+                        // I added an alert message to inform the user to fill all the required fields
+                        swal("Missing Fields", "Please fill all the required fields before sending", "warning");
                     }
-                );
-            } else {
-                // I added an alert message to inform the user to fill all the required fields
-                swal("Missing Fields", "Please fill all the required fields before sending", "warning");
-            }
-    
-    
-    
-        }
-    
-        // I added a function to disable or enable the button based on the input values
-        function validateInput() {
-            var name = document.getElementById("Name").value;
-            var contact = document.getElementById("Contact").value;
-            var email = document.getElementById("Email").value;
-            var mess = document.getElementById("message").value;
-    
-            var button = document.getElementById("send-button");
-    
-            if (name && contact && email && mess) {
-                // enable the button if all the required fields are filled
-                button.disabled = false;
-            } else {
-                // disable the button if any of the required fields are empty
-                button.disabled = true;
-            }
-        }
-    
-        // I added event listeners to call the validateInput function whenever the input values change
-        document.getElementById("Name").addEventListener("input", validateInput);
-        document.getElementById("Contact").addEventListener("input", validateInput);
-        document.getElementById("Email").addEventListener("input", validateInput);
-        document.getElementById("message").addEventListener("input", validateInput);
-    
-        // I called the validateInput function once to initialize the button state
-        validateInput();
-    
-    </script>
+
+
+
+                }
+
+                // I added a function to disable or enable the button based on the input values
+                function validateInput() {
+                    var name = document.getElementById("Name").value;
+                    var contact = document.getElementById("Contact").value;
+                    var email = document.getElementById("Email").value;
+                    var mess = document.getElementById("message").value;
+
+                    var button = document.getElementById("send-button");
+
+                    if (name && contact && email && mess) {
+                        // enable the button if all the required fields are filled
+                        button.disabled = false;
+                    } else {
+                        // disable the button if any of the required fields are empty
+                        button.disabled = true;
+                    }
+                }
+
+                // I added event listeners to call the validateInput function whenever the input values change
+                document.getElementById("Name").addEventListener("input", validateInput);
+                document.getElementById("Contact").addEventListener("input", validateInput);
+                document.getElementById("Email").addEventListener("input", validateInput);
+                document.getElementById("message").addEventListener("input", validateInput);
+
+                // I called the validateInput function once to initialize the button state
+                validateInput();
+
+            </script>
         </div>
 
 
@@ -356,9 +391,9 @@
         </figure>
 
 
-        
-    <!-- whatsapp chat button  -->
-    <!-- <script>
+
+        <!-- whatsapp chat button  -->
+        <!-- <script>
         // Get the button
         let mybutton = document.getElementById("myBtn");
 
@@ -379,18 +414,18 @@
             document.documentElement.scrollTop = 0;
         }
     </script> -->
-       
 
-        
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
 
 
 </body>
