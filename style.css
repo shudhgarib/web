@@ -389,3 +389,25 @@ nav ul li a:hover::after {
     margin-right: auto;
     display: table;
 }
+
+/* Add the animation for the slide-up effect */
+@keyframes slide-up {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Apply the animation */
+.slide-up {
+    animation: slide-up 2s ease-in-out forwards;
+}
+
+/* Optionally add a hover effect for a smoother transition when hovering */
+.slide-up:hover {
+    animation: slide-up 0.5s ease-out;
+}
