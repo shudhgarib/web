@@ -66,6 +66,10 @@
                             <a class="nav-link active" aria-current="page" href="#services">Project</a>
                         </li>
 
+                         <li class="nav-item">
+                            <a class="nav-link" href="#apk">APK</a>
+                        </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">contact</a>
                         </li>
@@ -324,6 +328,93 @@ Always learning, always building, always improving." <br><br>
         <!-- Resume  -->
         
         
+
+<!-- APK -->
+<div class="apk" id="apk">
+    <br>
+
+    <hr style="background-color:red">
+    <p class="apks">        
+        <span id="apkTrigger"
+              style="cursor:pointer; font-size:20px; margin-left:8px;">
+            🔐
+        </span>
+    </p>
+
+    <hr style="background-color:red">
+
+    <div class="Form" align="center">
+
+        <!-- APK SECTION - HIDDEN INITIALLY -->
+        <div id="apkSection" class="skill" style="display:none;">
+
+            <p class="Skills">APK</p>
+
+            <hr style="background-color:red">
+
+            <div class="row">
+
+                <!-- Vendekin APK -->
+                <div class="column">
+                    <a href="https://drive.google.com/file/d/1ZWDtmziJY_mwCFnVWU3YaDipWpHM4IBC/view?usp=sharing"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        <img src="./assets/Vendekin.gif"
+                             class="center"
+                             width="100%"
+                             alt="Vendekin APK">
+
+                    </a>
+                </div>
+
+
+                <!-- TCN APK -->
+                <div class="column">
+                    <a href="https://drive.google.com/file/d/1AzzHEIwNtgbW3zIWt8wJD2D2irsHyLx0/view?usp=drive_link"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        <img src="./assets/tcn_logo.jpg"
+                             class="center"
+                             width="100%"
+                             alt="TCN APK">
+
+                    </a>
+                </div>
+
+
+                <!-- TCN Lift APK -->
+                <div class="column">
+                    <a href="https://drive.google.com/file/d/1kCumG1yQwVx4GUwPSnEmKl2VSVdvls_6/view?usp=sharing"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        <img src="./assets/lift.gif"
+                             class="center"
+                             width="100%"
+                             alt="TCN Lift APK">
+
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <br>
+
+    </div>
+</div>
+<!-- APK -->
+
+
+
+
+
+
+
+
         <!-- contact -->
         <div class="skill" id="contact"><br>
             <p class="Skills">Contact US</p>
@@ -489,13 +580,63 @@ Always learning, always building, always improving." <br><br>
             crossorigin="anonymous"></script>
 
 
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const apkTrigger = document.getElementById("apkTrigger");
+    const apkSection = document.getElementById("apkSection");
+
+    let clickCount = 0;
+    let clickTimer = null;
+
+    apkTrigger.addEventListener("click", function () {
+
+        clickCount++;
+
+        console.log("APK Click:", clickCount);
+
+        // Reset the 3-second timer
+        clearTimeout(clickTimer);
+
+        // Unlock after 10 clicks
+        if (clickCount >= 10) {
+
+            apkSection.style.display = "block";
+
+            // Change lock icon
+            apkTrigger.innerHTML = "🔓";
+
+            apkTrigger.title = "APK Unlocked";
+
+            console.log("APK SECTION UNLOCKED!");
+
+            // Reset counter
+            clickCount = 0;
+
+        } else {
+
+            // Reset if user stops clicking for 3 seconds
+            clickTimer = setTimeout(function () {
+
+                clickCount = 0;
+
+                console.log("APK click counter reset");
+
+            }, 3000);
+
+        }
+
+    });
+
+});
+
+</script>
+            
+
+
+            
 </body>
 
 </html>
-
-
-
-
-
-
-
