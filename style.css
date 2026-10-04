@@ -411,3 +411,90 @@ nav ul li a:hover::after {
 .slide-up:hover {
     animation: slide-up 0.5s ease-out;
 }
+
+
+/* Work Experience - 3 columns like Qualification */
+.Work_Experience .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.Work_Experience .col-md-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.Work_Experience .col-md-4 p:not(.Skills) {
+    flex-grow: 1;
+}
+
+.Work_Experience .col-md-4 h2 {
+    width: 100%;
+}
+
+.Work_Experience .col-md-4 img {
+    border: 10px solid transparent;
+}
+
+@media (max-width: 767.98px) {
+    .Work_Experience .col-md-4 {
+        margin-bottom: 40px;
+    }
+}
+/* =================================
+   Work Experience Photo Slider
+   ================================= */
+
+.experience-photo-slider {
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+.experience-photo-track {
+    display: flex;
+    width: max-content;
+    animation: experienceSlideRTL 9s infinite;
+}
+
+.experience-photo {
+    width: 140px;
+    height: 140px;
+    flex: 0 0 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
+
+/* Right → Left automatic movement */
+@keyframes experienceSlideRTL {
+
+    0%,
+    25% {
+        transform: translateX(0);
+    }
+
+    33%,
+    58% {
+        transform: translateX(-140px);
+    }
+
+    66%,
+    91% {
+        transform: translateX(-280px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Pause when mouse is over image */
+.experience-photo-slider:hover .experience-photo-track {
+    animation-play-state: paused;
+}
